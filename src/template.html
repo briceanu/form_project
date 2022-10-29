@@ -6,5 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUpForm</title>
   </head>
-  <body></body>
+  <body>
+    <div class="logo-container">
+      <div class="logo">
+        <img class="logo-img" alt="oding picture" />
+        <h1>Project Form</h1>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="motivation">
+        <h2>
+          This is a learning registration page! You know you need somthing like
+          this in your life to help realize your deepest dreams.<br />
+          Sign up <i>now</i> and get started.
+        </h2>
+        <h2 class="second-h2">You <i>know</i> you want to.</h2>
+      </div>
+      <div class="form-container">
+        <h1>Let's do this!</h1>
+        <p>Fields marked with an asterisk(*) are required</p>
+        <form action="" method="post">
+          <label for="first_name">First Name</label>
+          <input type="text" name="first_name" id="first_name" />
+          <label for="last_name">Last Name</label>
+          <input type="text" name="last_name" id="last_name" /><br />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="phone_number">Phone Number</label>
+          <input type="tel" name="phone_number" id="phone_number" /><br />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <label for="confirm_password">Confirm Password</label>
+          <input
+            type="password"
+            name="confirm_password"
+            id="confirm_password"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

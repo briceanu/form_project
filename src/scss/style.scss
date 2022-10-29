@@ -1,1 +1,64 @@
 @use "_variables" as *;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 40% 60%);
+  grid-template-rows: repeat(1, 100vh);
+}
+//beginning of the logo side
+.logo-img {
+  width: 150px;
+  height: 150px;
+}
+.logo-container {
+  background-image: url(../assets/mathematic.jpg);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {
+  background-color: rgba(22, 12, 32, 0.164);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $clr-light;
+    font-family: "TradeWinds-Regular";
+    font-weight: 900;
+    font-size: 3rem;
+  }
+}
+//end of the logo style
+.motivation {
+  background-color: rgba(225, 227, 230, 0.418);
+}
+h2 {
+  padding-block-start: 3rem;
+  width: max(60%, 200px);
+  margin-left: 40px;
+  font-family: "TradeWinds-Regular";
+  text-align: justify;
+}
+.second-h2 {
+  padding-block-end: 1rem;
+}
+.form-container {
+  h1,
+  p {
+    margin-left: 40px;
+  }
+  h1 {
+    margin-block-start: 2rem;
+  }
+  p {
+    color: $light-gray;
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+}
+//styling form
