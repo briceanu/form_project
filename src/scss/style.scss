@@ -7,7 +7,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(2, 40% 60%);
-  grid-template-rows: repeat(1, 100vh);
+  grid-template-rows: repeat(1, 100%);
 }
 //beginning of the logo side
 .logo-img {
@@ -19,7 +19,7 @@ body {
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-block-start: 26rem;
 }
 .logo {
   background-color: rgba(22, 12, 32, 0.164);
@@ -34,8 +34,10 @@ body {
   }
 }
 //end of the logo style
+
 .motivation {
   background-color: rgba(225, 227, 230, 0.418);
+  box-shadow: 0 5px 5px rgb(4, 31, 95, 0.5);
 }
 h2 {
   padding-block-start: 3rem;
@@ -43,6 +45,7 @@ h2 {
   margin-left: 40px;
   font-family: "TradeWinds-Regular";
   text-align: justify;
+  font-size: 1.6rem;
 }
 .second-h2 {
   padding-block-end: 1rem;
@@ -52,9 +55,7 @@ h2 {
   p {
     margin-left: 40px;
   }
-  h1 {
-    margin-block-start: 2rem;
-  }
+
   p {
     color: $light-gray;
     font-weight: 800;
@@ -62,3 +63,116 @@ h2 {
   }
 }
 //styling form
+span {
+  color: red;
+}
+form {
+  label {
+    width: 200px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  input {
+    width: 220px;
+    height: 45px;
+    margin: 0.4rem 0;
+    border: none;
+    border-bottom: 2px solid rgb(184, 187, 189);
+    outline: none;
+    font-size: 1.3rem;
+    font-family: $font-aby;
+
+    &::placeholder {
+      font-size: 1.2rem;
+      font-family: $font-libre;
+    }
+  }
+  input:focus {
+    border-bottom: 4px solid rgb(103, 144, 170);
+  }
+}
+form[method="get"] {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 40px;
+}
+label {
+  padding: 1rem 0;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  flex-wrap: wrap;
+}
+.form-container {
+  h1 {
+    margin-block-start: 1rem;
+  }
+  box-shadow: 0 5px 5px rgb(4, 31, 95, 0.5);
+}
+.submit-section {
+  margin-left: 40px;
+  a {
+    color: rgb(103, 144, 170);
+    display: inline-block;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding-block-end: 0.4rem;
+  }
+}
+button {
+  padding: 0.5rem 1.4rem;
+  background-color: rgba(7, 7, 75, 0);
+  color: rgb(43, 41, 41);
+  border-radius: 10px;
+  border: 3px solid rgb(103, 144, 170);
+  font-size: 1.2rem;
+  margin-block-end: 0.4rem;
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(103, 144, 170);
+  }
+}
+input:focus::placeholder {
+  transform: translateY(-13px);
+  scale: 0.9;
+  transition: all 300ms linear;
+}
+
+input[type="email"]:invalid {
+  background-color: $invalid-clr;
+}
+input[type="email"]:valid {
+  background-color: $valid-clr;
+}
+// end of form styling
+footer {
+  background-color: $footer-clr;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  p {
+    font-size: 1.2rem;
+    padding: 0 0.1rem;
+  }
+}
+.gitImg {
+  width: 40px;
+  height: 40px;
+}

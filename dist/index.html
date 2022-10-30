@@ -5,9 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUpForm</title>
-  <script defer src="main4598c67c51fd4356cef3.js"></script></head>
+  <script defer src="main29da1bafa5e9f6ef8fd0.js"></script></head>
   <body>
-    <h1>this is the form awd</h1>
-    <img id="picture" alt="" />
+    <div class="logo-container">
+      <div class="logo">
+        <img class="logo-img" alt="oding picture" />
+        <h1>Project Form</h1>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="motivation">
+        <h2>
+          This is a learning registration page! You know you need somthing like
+          this in your life to help realize your deepest dreams.<br />
+          Sign up <i>now</i> and get started.
+        </h2>
+        <h2 class="second-h2">You <i>know</i> you want to.</h2>
+      </div>
+      <div class="form-container">
+        <h1>Let's do this!</h1>
+        <p>Fields marked with an asterisk(*) are required</p>
+        <form action="" method="get" id="signup-form">
+          <div class="left">
+            <label for="first_name"
+              >First Name
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                placeholder="first name please..."
+              />
+              <br />
+            </label>
+            <label for="last_name"
+              >Last Name
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                placeholder="last name please..."
+              /><br />
+            </label>
+            <label for="email"
+              >Email<span> *</span>
+              <input
+                required
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email please..."
+              />
+              <br />
+            </label>
+          </div>
+          <div class="right">
+            <label for="phone_number"
+              >Phone Number
+              <input
+                type="tel"
+                name="phone_number"
+                id="phone_number"
+                placeholder="enter 10 digit number..."
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              /><br />
+            </label>
+            <label for="password"
+              >Password<span> *</span>
+              <input
+                required
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password please..."
+              />
+            </label>
+            <label for="confirm_password"
+              >Confirm Password<span> *</span>
+              <input
+                required
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+                placeholder="confirm password please..."
+              />
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="submit-section">
+        <button type="submit" form="signup-form">Submit</button>
+        <p>Alreay have an account? <a href="">Log in</a></p>
+      </div>
+      <footer>
+        <p>&copy;</p>
+        <p>BriceanuTeodor</p>
+        <img class="gitImg" alt="" />
+      </footer>
+    </div>
   </body>
 </html>
