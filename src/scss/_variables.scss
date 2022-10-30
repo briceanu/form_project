@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Arvo:ital@1&family=Fascinate+Inline&family=Lemonada&family=Libre+Caslon+Display&family=Ms+Madi&display=swap");
+@font-face {
+  font-family: "TradeWinds-Regular";
+  src: url(./TradeWinds-Regular.ttf);
+}
 $font-aby: "Abyssinica SIL", serif;
 $font-libre: "Libre Caslon Display", serif;
 // end of fonts
@@ -8,7 +12,3 @@ $footer-clr: rgba(22, 12, 32, 0.548);
 $valid-clr: rgba(50, 205, 50, 0.466);
 $invalid-clr: rgba(255, 0, 0, 0.329);
 // end of colors
-@font-face {
-  font-family: "TradeWinds-Regular";
-  src: url(./TradeWinds-Regular.ttf);
-}
